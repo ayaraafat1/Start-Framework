@@ -1,0 +1,10 @@
+.home {
+  background-color: #1abc9c;
+  text-align: center;
+  color: #fff;
+  padding: 35px 0;
+  padding-top: 65px;
+}
+.home .head-img {
+  width: 250px;
+}

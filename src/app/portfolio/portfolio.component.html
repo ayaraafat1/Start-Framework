@@ -1,0 +1,102 @@
+<section class="portfolio text-center overflow-hidden">
+  <div class="container">
+    <h1 class="text-uppercase">portfolio component</h1>
+    <div
+      class="title-line d-flex justify-content-center align-items-center mt-3"
+    >
+      <div class="line color me-3"></div>
+      <i class="fa-solid fa-star"></i>
+      <div class="line color ms-3"></div>
+    </div>
+    <div class="row g-5 pt-4 mb-3">
+      <div class="col-md-4">
+        <div class="inner position-relative" (click)="showImg(myImg1)">
+          <div class="cover rounded">
+            <i class="fa-solid fa-plus" style="color: #ffffff"></i>
+          </div>
+          <img
+            src="/images/poert1.png"
+            alt="home"
+            class="w-100 d-block rounded"
+            #myImg1
+          />
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="inner position-relative" (click)="showImg(myImg2)">
+          <div class="cover rounded">
+            <i class="fa-solid fa-plus" style="color: #ffffff"></i>
+          </div>
+          <img
+            src="/images/port2.png"
+            alt="cake"
+            class="w-100 d-block rounded"
+            #myImg2
+          />
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="inner position-relative" (click)="showImg(myImg3)">
+          <div class="cover rounded">
+            <i class="fa-solid fa-plus" style="color: #ffffff"></i>
+          </div>
+          <img
+            src="/images/port3.png"
+            alt="home"
+            class="w-100 d-block rounded"
+            #myImg3
+          />
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="inner position-relative" (click)="showImg(myImg4)">
+          <div class="cover rounded">
+            <i class="fa-solid fa-plus" style="color: #ffffff"></i>
+          </div>
+          <img
+            src="/images/poert1.png"
+            alt="home"
+            class="w-100 d-block rounded"
+            #myImg4
+          />
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="inner position-relative" (click)="showImg(myImg5)">
+          <div class="cover rounded">
+            <i class="fa-solid fa-plus" style="color: #ffffff"></i>
+          </div>
+          <img
+            src="/images/port2.png"
+            alt="cake"
+            class="w-100 d-block rounded"
+            #myImg5
+          />
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="inner position-relative" (click)="showImg(myImg6)">
+          <div class="cover rounded">
+            <i class="fa-solid fa-plus" style="color: #ffffff"></i>
+          </div>
+          <img
+            src="/images/port3.png"
+            alt="home"
+            class="w-100 d-block rounded"
+            #myImg6
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  @if (isClicked) {
+  <div
+    class="light-container bg-primary bg-opacity-25"
+    (click)="closeContainer()"
+  >
+    <div class="box">
+      <img [src]="CurrentSrc" alt="photo" class="w-100" />
+    </div>
+  </div>
+  }
+</section>
